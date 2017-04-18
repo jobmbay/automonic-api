@@ -3,10 +3,10 @@
     "name": "db",
     "connector": "memory"
   },
-  "mongo": {
+  "automonic-api": {
     "host": "",
     "port": 0,
-    "url": "mongodb://localhost/automonic",
+    "url": "mongodb://jobmbay:passer@ds163360.mlab.com:63360/automonic-api",
     "database": "",
     "password": "",
     "name": "mongo",
