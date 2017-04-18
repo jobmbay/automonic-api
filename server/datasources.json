@@ -9,14 +9,8 @@
     "url": "mongodb://jobmbay:passer@ds163360.mlab.com:63360/automonic-api",
     "database": "",
     "password": "",
-    "name": "mongo",
+    "name": "automonic-api",
     "user": "",
     "connector": "mongodb"
-  },
-  "container": {
-    "name": "container",
-    "connector": "loopback-component-storage",
-    "provider": "filesystem",
-    "root": "./uploads"
   }
 }

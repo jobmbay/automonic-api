@@ -31,15 +31,14 @@
       "model": "trackerModel",
       "foreignKey": ""
     },
-    "vehicules": {
-      "type": "hasMany",
-      "model": "vehicule",
-      "foreignKey": "",
-      "through": "trackerVehicule"
-    },
     "vehicule": {
       "type": "belongsTo",
       "model": "vehicule",
+      "foreignKey": ""
+    },
+    "historique-trackers": {
+      "type": "hasMany",
+      "model": "historique-tracker",
       "foreignKey": ""
     }
   },

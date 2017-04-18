@@ -36,31 +36,31 @@
     "public": false
   },
   "tracker": {
-    "dataSource": "db",
+    "dataSource": "automonic-api",
     "public": true
   },
   "trackerConfig": {
-    "dataSource": "db",
+    "dataSource": "automonic-api",
     "public": true
   },
   "trackerModel": {
-    "dataSource": "db",
+    "dataSource": "automonic-api",
     "public": true
   },
   "Feature": {
-    "dataSource": "db",
+    "dataSource": "automonic-api",
     "public": true
   },
   "vehicule": {
-    "dataSource": "db",
+    "dataSource": "automonic-api",
     "public": true
   },
   "position": {
-    "dataSource": "db",
+    "dataSource": "automonic-api",
     "public": true
   },
-  "container": {
-    "dataSource": "db",
+  "historique-tracker": {
+    "dataSource": "automonic-api",
     "public": true
   }
 }

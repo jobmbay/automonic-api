@@ -1,0 +1,28 @@
+{
+  "name": "historique-tracker",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "tracker": {
+      "type": "belongsTo",
+      "model": "tracker",
+      "foreignKey": ""
+    },
+    "vehicule": {
+      "type": "belongsTo",
+      "model": "vehicule",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
