@@ -1,0 +1,49 @@
+{
+  "name": "vehicule",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "matricule": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "cardNumber": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "photoUrl": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "positions": {
+      "type": "hasMany",
+      "model": "position",
+      "foreignKey": ""
+    },
+    "trackers": {
+      "type": "hasMany",
+      "model": "tracker",
+      "foreignKey": "",
+      "through": "trackerVehicule"
+    },
+    "tracker": {
+      "type": "belongsTo",
+      "model": "tracker",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

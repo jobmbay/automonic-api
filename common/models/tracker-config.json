@@ -1,0 +1,26 @@
+{
+  "name": "trackerConfig",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "intervaleTime": {
+      "type": "number"
+    },
+    "intervalLength": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "trackers": {
+      "type": "hasMany",
+      "model": "tracker",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

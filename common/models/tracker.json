@@ -1,0 +1,48 @@
+{
+  "name": "tracker",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "trackerId": {
+      "type": "number"
+    },
+    "password": {
+      "type": "number"
+    },
+    "serial": {
+      "type": "string"
+    },
+    "chipNumber": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "trackerConfig": {
+      "type": "belongsTo",
+      "model": "trackerConfig",
+      "foreignKey": ""
+    },
+    "trackerModel": {
+      "type": "belongsTo",
+      "model": "trackerModel",
+      "foreignKey": ""
+    },
+    "vehicules": {
+      "type": "hasMany",
+      "model": "vehicule",
+      "foreignKey": "",
+      "through": "trackerVehicule"
+    },
+    "vehicule": {
+      "type": "belongsTo",
+      "model": "vehicule",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

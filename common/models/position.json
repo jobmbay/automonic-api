@@ -1,0 +1,35 @@
+{
+  "name": "position",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "latitude": {
+      "type": "number"
+    },
+    "longitude": {
+      "type": "number"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "speed": {
+      "type": "number"
+    },
+    "date": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "vehicule": {
+      "type": "belongsTo",
+      "model": "vehicule",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

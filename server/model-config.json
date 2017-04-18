@@ -1,0 +1,66 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "tracker": {
+    "dataSource": "db",
+    "public": true
+  },
+  "trackerConfig": {
+    "dataSource": "db",
+    "public": true
+  },
+  "trackerModel": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Feature": {
+    "dataSource": "db",
+    "public": true
+  },
+  "vehicule": {
+    "dataSource": "db",
+    "public": true
+  },
+  "position": {
+    "dataSource": "db",
+    "public": true
+  },
+  "container": {
+    "dataSource": "db",
+    "public": true
+  }
+}
